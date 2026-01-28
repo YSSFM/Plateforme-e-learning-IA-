@@ -1,0 +1,53 @@
+.admin-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    min-height: 100vh;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    padding: 30px;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+}
+
+.sidebar nav a {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.sidebar .danger {
+    color: #c00;
+}
+
+.admin-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.block {
+    padding: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.btn-danger {
+    color: #fff;
+    background: #c00;
+    padding: 6px 10px;
+    border-radius: 6px;
+}

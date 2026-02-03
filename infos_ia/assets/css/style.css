@@ -121,3 +121,20 @@ span,
 strong {
     text-decoration: none;
 }
+
+/* Success & Error */
+.success {
+    background: rgba(0, 255, 0, 0.15);
+    color: #0b610b;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Input focus */
+.auth-box input:focus {
+    background: rgba(255,255,255,0.55);
+    box-shadow: 0 0 10px rgba(88,204,2,0.4);
+}

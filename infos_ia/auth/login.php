@@ -29,10 +29,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Redirection intelligente
             if ($user['role'] === 'admin') {
                 header('Location: ../admin/dashboard.php');
-            } elseif ($user['niveau'] === 'null') {
-                header('Location: choose_level.php');
-            } else {
-                header('Location: ../dashboard.php');
+            }else {
+                header('Location: dashboard_user.php');
             }
             exit;
 
@@ -42,13 +40,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Connexion | AI Courses</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/auth.css">
 </head>
@@ -56,9 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 
 <header class="glass header">
-    <div class="header-left">
-        <strong>YSSFM</strong>
-    </div>
+    <div class="header-left"><strong>YSSFM</strong></div>
     <nav class="header-right">
         <a href="../index.php">Accueil</a>
         <a href="#">À propos</a>
@@ -72,17 +68,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <section class="glass auth-info">
         <h1>Besoin d'en savoir plus ?</h1>
         <p class="subtitle">Vous êtes au bon endroit.</p>
-
         <p>
             Apprenez l’intelligence artificielle et les technologies émergentes
             gratuitement, avec des cours organisés par niveaux DUT (S1 à S4).
         </p>
-
         <p>
             Commencez à votre rythme, suivez votre progression
             et accédez aux modules adaptés à votre niveau.
         </p>
-
         <strong>Profitez-en !</strong>
     </section>
 
@@ -109,15 +102,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
 
             <div class="auth-links">
-                <a href="#">Mot de passe oublié ?</a>
+                <a href="forgot_password.php">Mot de passe oublié ?</a>
             </div>
 
             <button type="submit" class="btn">Se connecter</button>
         </form>
 
         <p class="small">
-            Pas encore de compte ?
-            <a href="register.php">Créer un compte</a>
+            Pas encore de compte ? <a href="register.php">Créer un compte</a>
         </p>
     </section>
 

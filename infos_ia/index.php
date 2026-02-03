@@ -1,16 +1,18 @@
 <?php
-session_start();
+// index.php
 require_once __DIR__ . '/config/database.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>AI Courses</title>
     <meta charset="utf-8">
+    <title>AI Courses</title>
+
     <meta name="author" content="Moussa Youssouf">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="http://localhost/infos_ia/assets/css/style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/infos_ia/assets/css/style.css">
 </head>
 
 <body>
@@ -23,43 +25,45 @@ require_once __DIR__ . '/config/database.php';
     <nav class="header-right">
         <a href="#">À propos du site</a>
         <a href="#">Infos utiles</a>
-        <a class="btn-outline" href="auth/login.php">Se connecter</a>
+        <a class="btn-outline" href="/infos_ia/auth/login.php">Se connecter</a>
     </nav>
 </header>
 
 <main>
 
+    <!-- HERO -->
     <section class="hero glass">
         <h1>Envie d'apprendre l'IA ?</h1>
         <p class="subtitle">Bienvenue sur AI Courses</p>
 
         <p class="highlight">
-            Apprendre l'IA et les technologies émergentes gratuitement,
-            à votre rythme et en toute simplicité.
+            Apprenez l’intelligence artificielle et les technologies émergentes
+            gratuitement, à votre rythme et en toute simplicité.
         </p>
 
-        <a href="auth/login.php" class="btn">Commencer maintenant</a>
+        <a href="/infos_ia/auth/login.php" class="btn">Commencer maintenant</a>
     </section>
 
+    <!-- CONTENT -->
     <section class="bottom">
 
         <div class="glass bottom-left">
             <h2>Pourquoi AI Courses ?</h2>
             <p>
-                Une plateforme e-learning dédiée exclusivement à l'IA
+                Une plateforme e-learning dédiée exclusivement à l’IA
                 et aux technologies émergentes pour les étudiants de niveau <strong>DUT</strong>.
             </p>
             <p>
-                Cours, exercices (TP/TD), corrections et suivi de progression,
-                le tout dans une interface simple et moderne.
+                Cours structurés, TD/TP, corrections détaillées
+                et suivi de progression dans une interface moderne.
             </p>
         </div>
 
         <div class="glass bottom-right">
-            <h2>Accéder aux différents cours</h2>
+            <h2>Accéder aux cours</h2>
             <p>
                 Connectez-vous pour découvrir les modules,
-                suivre votre progression et réaliser les exercices.
+                suivre votre progression et accéder aux exercices.
             </p>
         </div>
 
